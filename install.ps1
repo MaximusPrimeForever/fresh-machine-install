@@ -1,0 +1,15 @@
+winget install -e -h Mozilla.Firefox
+winget install -e -h qbittorrent.qbittorrent
+winget install -e -h surfshark.surfshark
+winget install -e -h 7zip.7zip
+winget install -e -h Python.Python.3.12
+winget install -e -h Rustlang.Rustup
+winget install -e -h Microsoft.VisualStudioCode
+winget install -e -h Obsidian.Obsidian
+winget install -e -h Valve.Steam
+winget install -e -h Spotify.Spotify
+winget install -e -h Git.Git
+winget install -e -h Discord.Discord
+winget install -e -h Microsoft.WindowsTerminal
+winget install -e -h Stremio.Stremio
+winget install -e -h Microsoft.PowerToys
