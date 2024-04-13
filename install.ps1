@@ -13,3 +13,9 @@ winget install -e -h Discord.Discord
 winget install -e -h Microsoft.WindowsTerminal
 winget install -e -h Stremio.Stremio
 winget install -e -h Microsoft.PowerToys
+winget install -e -h Syncthing.Syncthing
+winget install -e -h vivaldi.vivaldi
+winget install -e -h voidtools.Everything
+winget install -e -h JanDeDobbeleer.OhMyPosh
+winget install -e -h Telegram.TelegramDesktop
+winget install -e -h Google.PlatformTools
