@@ -20,4 +20,5 @@ winget install -e -h \
     JanDeDobbeleer.OhMyPosh;\
     Telegram.TelegramDesktop;\
     Google.PlatformTools;\
-    Armin2208.WindowsAutoNightMode
+    Armin2208.WindowsAutoNightMode;\
+    Foxit.PhantomPDF
