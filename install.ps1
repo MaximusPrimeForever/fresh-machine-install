@@ -1,21 +1,23 @@
-winget install -e -h Mozilla.Firefox
-winget install -e -h qbittorrent.qbittorrent
-winget install -e -h surfshark.surfshark
-winget install -e -h 7zip.7zip
-winget install -e -h Python.Python.3.12
-winget install -e -h Rustlang.Rustup
-winget install -e -h Microsoft.VisualStudioCode
-winget install -e -h Obsidian.Obsidian
-winget install -e -h Valve.Steam
-winget install -e -h Spotify.Spotify
-winget install -e -h Git.Git
-winget install -e -h Discord.Discord
-winget install -e -h Microsoft.WindowsTerminal
-winget install -e -h Stremio.Stremio
-winget install -e -h Microsoft.PowerToys
-winget install -e -h Syncthing.Syncthing
-winget install -e -h vivaldi.vivaldi
-winget install -e -h voidtools.Everything
-winget install -e -h JanDeDobbeleer.OhMyPosh
-winget install -e -h Telegram.TelegramDesktop
-winget install -e -h Google.PlatformTools
+winget install -e -h \
+    Mozilla.Firefox;\
+    qbittorrent.qbittorrent;\
+    surfshark.surfshark;\
+    7zip.7zip;\
+    Python.Python.3.12;\
+    Rustlang.Rustup;\
+    Microsoft.VisualStudioCode;\
+    Obsidian.Obsidian;\
+    Valve.Steam;\
+    Spotify.Spotify;\
+    Git.Git;\
+    Discord.Discord;\
+    Microsoft.WindowsTerminal;\
+    Stremio.Stremio;\
+    Microsoft.PowerToys;\
+    Syncthing.Syncthing;\
+    vivaldi.vivaldi;\
+    voidtools.Everything;\
+    JanDeDobbeleer.OhMyPosh;\
+    Telegram.TelegramDesktop;\
+    Google.PlatformTools;\
+    Armin2208.WindowsAutoNightMode
