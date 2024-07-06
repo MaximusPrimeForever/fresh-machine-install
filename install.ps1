@@ -21,4 +21,6 @@ winget install -e -h \
     Telegram.TelegramDesktop;\
     Google.PlatformTools;\
     Armin2208.WindowsAutoNightMode;\
-    Foxit.PhantomPDF
+    Foxit.PhantomPDF;\
+    WerWolv.ImHex;\
+    AntibodySoftware.WizTree
