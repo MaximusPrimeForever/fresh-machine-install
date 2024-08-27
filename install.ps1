@@ -23,4 +23,8 @@ winget install -e -h \
     Armin2208.WindowsAutoNightMode;\
     Foxit.PhantomPDF;\
     WerWolv.ImHex;\
-    AntibodySoftware.WizTree
+    AntibodySoftware.WizTree;\
+    Mozilla.Thunderbird;\
+    PersepolisDownloadManager.Persepolis;\
+    CPUID.HWMonitor;\
+    
