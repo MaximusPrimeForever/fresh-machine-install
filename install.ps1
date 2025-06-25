@@ -1,30 +1,46 @@
-winget install -e -h \
-    Mozilla.Firefox;\
-    qbittorrent.qbittorrent;\
-    surfshark.surfshark;\
-    7zip.7zip;\
-    Python.Python.3.12;\
-    Rustlang.Rustup;\
-    Microsoft.VisualStudioCode;\
-    Obsidian.Obsidian;\
-    Valve.Steam;\
-    Spotify.Spotify;\
-    Git.Git;\
-    Discord.Discord;\
-    Microsoft.WindowsTerminal;\
-    Stremio.Stremio;\
-    Microsoft.PowerToys;\
-    Syncthing.Syncthing;\
-    vivaldi.vivaldi;\
-    voidtools.Everything;\
-    JanDeDobbeleer.OhMyPosh;\
-    Telegram.TelegramDesktop;\
-    Google.PlatformTools;\
-    Armin2208.WindowsAutoNightMode;\
-    Foxit.PhantomPDF;\
-    WerWolv.ImHex;\
-    AntibodySoftware.WizTree;\
-    Mozilla.Thunderbird;\
-    PersepolisDownloadManager.Persepolis;\
-    CPUID.HWMonitor;\
-    
+#Install New apps
+Write-Output "Installing Apps"
+$apps = @(
+    @{name = "Mozilla.Firefox" }, 
+    @{name = "Microsoft.VisualStudioCode" }, 
+    @{name = "surfshark.surfshark" }, 
+    @{name = "7zip.7zip" }, 
+    @{name = "Git.Git" }, 
+    @{name = "Obsidian.Obsidian" },
+    @{name = "Valve.Steam"  },
+    @{name = "Spotify.Spotify" },
+    @{name = "Discord.Discord" },
+    @{name = "Stremio.Stremio" },
+    @{name = "Microsoft.PowerToys" },
+    @{name = "JanDeDobbeleer.OhMyPosh" },
+    @{name = "Syncthing.Syncthing" },
+    @{name = "Vivaldi.Vivaldi" },
+    @{name = "voidtools.Everything" },
+    @{name = "Google.PlatformTools" },
+    @{name = "Armin2208.WindowsAutoNightMode" },
+    @{name = "AntibodySoftware.WizTree" },
+    @{name = "WerWolv.ImHex" },
+    @{name = "PersepolisDownloadManager.Persepolis" },
+    @{name = "CPUID.HWMonitor" },
+    @{name = "qBittorrent.qBittorrent.Qt6" },
+    @{name = "t1m0thyj.WinDynamicDesktop" },
+    @{name = "zyedidia.micro" },
+    @{name = "Nvidia.GeForceNow" },
+    @{name = "KDE.KDEConnect" },
+    @{name = "OO-Software.ShutUp10" }
+);
+Foreach ($app in $apps) {
+    $listApp = winget list --exact -q $app.name --accept-source-agreements 
+    if (![String]::Join("", $listApp).Contains($app.name)) {
+        Write-host "Installing:" $app.name
+        if ($app.source -ne $null) {
+            winget install --exact --silent $app.name --source $app.source --accept-package-agreements
+        }
+        else {
+            winget install --exact --silent $app.name --accept-package-agreements
+        }
+    }
+    else {
+        Write-host "Skipping Install of " $app.name
+    }
+}
