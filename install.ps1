@@ -27,7 +27,8 @@ $apps = @(
     @{name = "zyedidia.micro" },
     @{name = "Nvidia.GeForceNow" },
     @{name = "KDE.KDEConnect" },
-    @{name = "OO-Software.ShutUp10" }
+    @{name = "OO-Software.ShutUp10" },
+    @{name = "cebby2420.VIADesktop" }
 );
 Foreach ($app in $apps) {
     $listApp = winget list --exact -q $app.name --accept-source-agreements 
