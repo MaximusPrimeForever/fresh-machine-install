@@ -3,7 +3,6 @@ Write-Output "Installing Apps"
 $apps = @(
     @{name = "Mozilla.Firefox" }, 
     @{name = "Microsoft.VisualStudioCode" }, 
-    @{name = "surfshark.surfshark" }, 
     @{name = "7zip.7zip" }, 
     @{name = "Git.Git" }, 
     @{name = "Obsidian.Obsidian" },
@@ -14,7 +13,6 @@ $apps = @(
     @{name = "Microsoft.PowerToys" },
     @{name = "JanDeDobbeleer.OhMyPosh" },
     @{name = "Syncthing.Syncthing" },
-    @{name = "Vivaldi.Vivaldi" },
     @{name = "voidtools.Everything" },
     @{name = "Google.PlatformTools" },
     @{name = "Armin2208.WindowsAutoNightMode" },
@@ -28,7 +26,9 @@ $apps = @(
     @{name = "Nvidia.GeForceNow" },
     @{name = "KDE.KDEConnect" },
     @{name = "OO-Software.ShutUp10" },
-    @{name = "cebby2420.VIADesktop" }
+    @{name = "cebby2420.VIADesktop" },
+    @{name = "MullvadVPN.MullvadVPN" },
+    @{name = "MullvadVPN.MullvadBrowser" }
 );
 Foreach ($app in $apps) {
     $listApp = winget list --exact -q $app.name --accept-source-agreements 
